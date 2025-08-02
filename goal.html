@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="goal.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <header class="signup-header">
+          <h1>Signup</h1>
+        </header>
+        <main class="signup-body">
+          <form action="#" id="signupForm">
+            <div class="para">
+              <label for="name">Full Name</label>
+            <input type="text" placeholder="Type Name Here" id="name" required pattern="[A-Za-z]+\s[A-Za-z]+"/>
+            <i class="fa-solid"></i>
+            <span id="nameError"></span>
+            </div>
+             <div class="para">
+              <label for="email">Email</label>
+            <input type="email" placeholder="xyz@gmail.com" id="email" required/>
+             <i class="fa-solid"></i>
+            <span id="emailError"></span>
+            </div>
+             <div class="para">
+              <label for="password">Password</label>
+            <input type="password" placeholder="atleast 8 characters" id="password" min="8" max="30"  required/>
+            <i class="fa-solid"></i>
+            <span id="passwordError"></span>
+            </div>
+            <div class="para">
+            <input type="submit" value="Create Account" id="submitBtn"/>
+            </div>
+          </form>
+        </main>
+        <footer class="signup-footer">
+          <p>Already have an account? <a href="">Login</a></p>
+        </footer>
+      </div>
+    </div> 
+
+
+ <script src="goal.js"></script>
+  </body>
+</html>
+
